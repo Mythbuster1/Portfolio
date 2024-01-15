@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di";
@@ -9,7 +9,6 @@ const Nav = styled.div`
     background-color: ${({ theme }) => theme.card_light};
     height: 80px;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: sticky;
@@ -131,13 +130,14 @@ const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 16px;
     position: absolute;
-    top: 80;
+    top: 80px;
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: ${({ theme }) => theme.card_light};
     transition: all 0.3s ease-in-out;
     transform: ${({ open }) => open ? 'translateX(0)': 'translateY(100%)'};
     border-radius: 0 0 20px 20px;
