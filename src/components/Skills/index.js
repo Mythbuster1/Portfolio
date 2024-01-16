@@ -49,6 +49,7 @@ const Desc = styled.div`
 
 const SkillsContainer = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -70,11 +71,10 @@ const Skill = styled.div`
     }
     
     @media screen and (max-width: 500px) {
-        max-width: 330px;
+        max-width: 350px;
         padding: 10px 36px; 
     }
 `;
-
 
 const SkillTitle = styled.h2`
     font-size: 28px;
@@ -90,6 +90,10 @@ const SkillList = styled.div`
     gap: 12px;
     flex-wrap:wrap;
     margin-bottom: 20px;
+    
+    @media screen and (max-width: 500px) {  
+        gap: 8px;
+    }
 `;
 
 const SkillItem = styled.div`
@@ -131,13 +135,13 @@ function Skills(){
                     Here are some of the tech listed on which i  had been working from past 2 years 
                 </Desc>
                 <SkillsContainer>
-                    {skills.map((item) => (
-                        <Skill>
+                    {skills.map((item,index) => (
+                        <Skill key={index}>
                             <SkillTitle>{item.title}</SkillTitle>
                             <SkillList>
                                 {
-                                    item.skills.map((skill) => (
-                                    <SkillItem>
+                                    item.skills.map((skill,index) => (
+                                    <SkillItem key={index}>
                                         <SkillImage src={skill.image} />
                                         {skill.name}
                                     </SkillItem>
