@@ -27,7 +27,7 @@ const NavContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1200px;
+    max-width: 1100px;
 `;
 
 const NavLogo = styled(LinkR)`
@@ -139,20 +139,20 @@ const MobileMenu = styled.div`
     padding: 12px 40px 24px 40px;
     background: ${({ theme }) => theme.card_light};
     transition: all 0.3s ease-in-out;
-    transform: ${({ open }) => open ? 'translateX(0)': 'translateY(100%)'};
+    transform: ${({ open }) => open ? 'translateY(0)': 'translateY(-100%)'};
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0 ,0, 0, 0.3);
     opacity:  ${({open}) => open ? '1' : '0'};
     z-index: ${({open}) => open ? '1' : '-1'};
 `;
 
-const MobileMenuLinks = styled(LinkR)`
+const MobileMenuLinks = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    &:hover: {
+    &:hover {
         color: ${({ theme }) => theme.primary}; 
     }
 `;
