@@ -6,20 +6,23 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: realtive;
+    position: relative;
     z-index: 1;
+    align-items: center;
 `;
 
 const Wrapper = styled.div`
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    max-width: 1100px;
     gap: 12px;
+    @media (max-width: 960px) {
+        flex-direction: column;
+    }
 `;
 
 const Title = styled.h1`
@@ -42,19 +45,18 @@ const Desc = styled.div`
     text-align: center;
     color: ${({theme}) => theme.text_secondary};
     
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
         font-size: 16px;
     }
 `;
 
 const SkillsContainer = styled.div`
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
-    gap: 30px;    
+    gap: 30px;
+    justify-content: center; 
 `;
 
 const Skill = styled.div`
@@ -62,6 +64,7 @@ const Skill = styled.div`
     max-width: 500px;
     background-color: ${({theme}) => theme.card};
     border: 2px solid #854CE6;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     border-radius: 16px;
     padding: 18px 36px;
 

@@ -13,10 +13,10 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: realtive;
+    position: relative;
     z-index: 1;
-    margin-top:30px;
+    align-items: center;
+    padding: 40px 0px 80px 0px;
 `;
 
 const Wrapper = styled.div`
@@ -67,7 +67,7 @@ const TimeLineSection = styled.div`
 
 function Experience() {
     return (
-        <Container>
+        <Container id="experience">
             <Wrapper>
                 <Title>Experience</Title>
                 <Desc>My work experience as a software engineer and working on different companies and projects.</Desc>
