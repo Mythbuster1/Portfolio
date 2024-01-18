@@ -83,17 +83,17 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
-function Footer() {
+function Footer( {active, setActive }) {
   return (
     <FooterContainer>
       <FooterWrapper>
         <Logo>{Bio.name}</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink onClick={() => setActive('about')} href="#about">About</NavLink>
+          <NavLink onClick={() => setActive('skills')} href="#skills">Skills</NavLink>
+          <NavLink onClick={() => setActive('experience')} href="#experience">Experience</NavLink>
+          <NavLink onClick={() => setActive('projects')} href="#projects">Projects</NavLink>
+          <NavLink onClick={() => setActive('education')} href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>

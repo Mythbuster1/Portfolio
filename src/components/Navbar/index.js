@@ -4,10 +4,10 @@ import styled, { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    background-color: ${({theme}) => theme.bgLight};
     height: 80px;
     display: flex;
     align-items: center;
@@ -42,6 +42,7 @@ const NavLogo = styled(LinkR)`
     text-decoration: none;
     @media (max-width: 640px) {
     padding: 0 0px;
+    color: ${({ theme }) => theme.primary};
 }
 `;
 
@@ -95,19 +96,28 @@ const NavLink = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-    width: 80%;  
+    width: 70%;  
     height: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 0 6px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 968px) {
+        z-index: 100;
+        margin-left: 10px;
         display: none;
     }
 `;
 
+const DarkModeToggleButton = styled.div`
+    margin-left: 10px;
+    @media screen and (max-width: 768px) {
+        margin-right: 40px;
+    }
+`;
+
 const GithubButton = styled.button`
-    background-color: transparent;
+    background-color: ${({ theme }) => theme.button};
     border: 1.8px solid ${({ theme }) => theme.primary};
     display: flex;
     justify-content: center;
@@ -124,7 +134,7 @@ const GithubButton = styled.button`
         color: ${({ theme }) => theme.white};     
     }
     @media screen and (max-width: 768px) { 
-    font-size: 14px;
+        font-size: 14px;
     }
 `;
 
@@ -139,7 +149,7 @@ const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light};
+    background: ${({ theme }) => theme.bgLight};
     transition: all 0.3s ease-in-out;
     transform: ${({ open }) => open ? 'translateY(0)': 'translateY(-100%)'};
     border-radius: 0 0 20px 20px;
@@ -159,17 +169,17 @@ const MobileMenuLinks = styled.a`
     }
 `;
 
-const Navbar = () => {
+const Navbar = ({active, setActive, darkMode, setDarkMode, toggleDarkMode}) => {
     const [open, setOpen] = React.useState(false);
+    
     const theme = useTheme
     return (
       <Nav>
         <NavContainer>
-            <NavLogo to="/">
+            <NavLogo to="/" onClick={() => setActive('')}>
                 <span style={{
                     display: "flex",
                     alignItems: "center",
-                    color: "white",
                     marginBottom: "20",
                     cursor: "pointer"
                 }}>
@@ -188,12 +198,19 @@ const Navbar = () => {
                 )}
             </MobileIcon>
             <NavItems>
-                <NavLink href="#about">About</NavLink>
-                <NavLink href="#skills">Skills</NavLink>
-                <NavLink href="#experience">Experience</NavLink>
-                <NavLink href="#projects">Projects</NavLink>
-                <NavLink href="#education">Education</NavLink>
+                <NavLink className={active === 'about' ? 'active' : ''} onClick={() => setActive('about')} href="#about">About</NavLink>
+                <NavLink className={active === 'skills' ? 'active' : ''} onClick={() =>setActive('skills')} href="#skills">Skills</NavLink>
+                <NavLink className={active === 'experience' ? 'active' : ''} onClick={() => setActive('experience')} href="#experience">Experience</NavLink>
+                <NavLink className={active === 'projects' ? 'active' : ''} onClick={() =>setActive('projects')} href="#projects">Projects</NavLink>
+                <NavLink className={active === 'education' ? 'active' : ''} onClick={() => setActive('education')} href="#education">Education</NavLink>
             </NavItems>
+            <DarkModeToggleButton>
+                <DarkModeSwitch
+                    checked={darkMode}
+                    onChange={toggleDarkMode}
+                    size={30}
+                />
+            </DarkModeToggleButton>
             <ButtonContainer>
                 <GithubButton>Github Profile</GithubButton>
             </ButtonContainer>
@@ -240,7 +257,6 @@ const Navbar = () => {
                         style={{
                             padding: "10px 16px",
                             background: `${theme.primary}`,
-                            color: "white",
                             width: "max-content"
                         }}
                         

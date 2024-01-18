@@ -1,6 +1,6 @@
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme } from './util/Theme';
+import { darkTheme, lightTheme } from './util/Theme';
 import Navbar from './components/Navbar';
 import HeroSection from './components/Herosection';
 import Skills from './components/Skills';
@@ -10,6 +10,7 @@ import Experience from './components/Experience/Index';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import React from 'react';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -24,10 +25,17 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [active, setActive] = React.useState('');
+  const [darkMode, setDarkMode] = React.useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+  
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      
       <Router >
-        <Navbar />
+        <Navbar active={active} setActive={setActive} darkMode={darkMode} setDarkMode={setDarkMode} toggleDarkMode={toggleDarkMode} />
         <Body>
           <HeroSection />
           <Wrapper>
@@ -39,7 +47,7 @@ function App() {
             <Education />
             <Contact />
           </Wrapper>
-          <Footer />
+          <Footer active={active} setActive={setActive}  />
         </Body>
       </Router>
     </ThemeProvider>
