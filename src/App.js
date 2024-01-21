@@ -11,6 +11,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import React from 'react';
+import { useState } from 'react';
+import ProjectDetails from './components/Projectdetails';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -25,8 +27,9 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-  const [active, setActive] = React.useState('');
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [active, setActive] = useState('');
+  const [darkMode, setDarkMode] = useState(false);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
@@ -42,12 +45,16 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
-          <Projects  />
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
             <Education />
             <Contact />
           </Wrapper>
           <Footer active={active} setActive={setActive}  />
+          {
+            openModal.state && 
+             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          }
         </Body>
       </Router>
     </ThemeProvider>

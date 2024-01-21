@@ -247,7 +247,7 @@ export const projects = [
           name: "Tarun Kumar Sharma",
           img: "https://i.ibb.co/s96vZrd/IMG-1058.jpg",
           linkedin: "https://www.linkedin.com/in/tarun-sharma-721952221/",
-          github: "https://github.com/rishavchanda/",
+          github: "https://github.com/Mythbuster1",
         },
       ],
     },
