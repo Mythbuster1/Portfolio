@@ -7,6 +7,8 @@ import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
+  display:flex;
+  justify-content: center;
   position: relative;
   padding: 80px 30px;
   @media screen and (max-width: 960px) {
