@@ -182,7 +182,7 @@ export const experiences = [
       img: "https://letsgrowmore.in/wp-content/uploads/2021/05/Artboard-1-1-removebg-preview-e1645900071758.jpg",
       role: "Front End developer Intern",
       company: "Lets Grow more",
-      date: "Sep 2022 - Oct 2022",
+      date: "Oct 2021 - Nov 2021",
       desc: "Proficiently employed a versatile technology stack comprising HTML, CSS, Bootstrap, and JavaScript (JS), ReactJs to broaden my web development skill set, contributing to 70% of my overall proficiency",
       
       skills: [
@@ -192,6 +192,7 @@ export const experiences = [
       "Javascript",
       "Php"
       ],
+      doc: "https://i.ibb.co/1RrWbG0/Screenshot-2024-01-24-at-4-29-58-PM.png"
   },
 ];
   
@@ -229,7 +230,7 @@ export const projects = [
     {
       id: 1,
       title: "Responsive WebSite",
-      date: "Sep 2022",
+      date: "Oct 2021",
       description:
         "This is a responsive web application designed to enhance frontend  productivity in the workplace. This comprosies of google maps and Sass preprocessor for compiling CSS",
       image:
@@ -252,6 +253,32 @@ export const projects = [
         },
       ],
     },
+    {
+        id: 1,
+        title: "React Api Fetch",
+        date: "Oct 2021",
+        description:
+          "This is a react api fetch application designed to dynamically showcase the list of users. This comprosies of react libraries and other gh-pages",
+        image:
+          "https://i.ibb.co/b5VLn5S/reactapifetch.png",
+        tags: [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "React",
+        ],
+        category: "web app",
+        github: "https://github.com/TarunKsharma1/LGMVIP-ReactApi.git",
+        webapp: "https://tarunksharma1.github.io/LGMVIP-ReactApi/",
+        member: [
+          {
+            name: "Tarun Kumar Sharma",
+            img: "https://i.ibb.co/s96vZrd/IMG-1058.jpg",
+            linkedin: "https://www.linkedin.com/in/tarun-sharma-721952221/",
+            github: "https://github.com/Mythbuster1",
+          },
+        ],
+      },
 ];
   
 export const TimeLineData = [
