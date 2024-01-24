@@ -147,7 +147,7 @@ export const experiences = [
       role: "Laravel Developer",
       company: "Phoeniixx Designs",
       date: "July 2023 - Present",
-      desc: "Working on the Full Stack development of web application using Vuejs, and Material UI., and Backend Technologies and Api creations",
+      desc: "Currently engaged in the comprehensive development of a web application, applying my skills in Full Stack development. Proficiently utilizing Vue.js and React.js alongside Material UI for seamless and responsive user interfaces. Employing Laravel and various other backend technologies to ensure robust functionality and seamless integration. Additionally, actively involved in crafting APIs to enhance the application's connectivity and interoperability.",
       skills: [
       "ReactJS",
       "Vuejs",
@@ -183,7 +183,7 @@ export const experiences = [
       role: "Front End developer Intern",
       company: "Lets Grow more",
       date: "Sep 2022 - Oct 2022",
-      desc: "Proficiently employed a versatile technology stack comprising HTML, CSS, Bootstrap, and JavaScript (JS), ReactJs to broaden my web development skill set, contributing to 70% of my overall proficiency.Successfully executed small‑scale projects employing HTML, CSS, Bootstrap,ReactJs reinforcing my practical knowledge in web dev",
+      desc: "Proficiently employed a versatile technology stack comprising HTML, CSS, Bootstrap, and JavaScript (JS), ReactJs to broaden my web development skill set, contributing to 70% of my overall proficiency",
       
       skills: [
       "Web Application Development",
