@@ -147,7 +147,7 @@ export const experiences = [
       role: "Laravel Developer",
       company: "Phoeniixx Designs",
       date: "July 2023 - Present",
-      desc: "Working on the frontend of the web application using Vuejs, and Material UI., and Backend development and Api creations",
+      desc: "Working on the Full Stack development of web application using Vuejs, and Material UI., and Backend Technologies and Api creations",
       skills: [
       "ReactJS",
       "Vuejs",
@@ -166,8 +166,8 @@ export const experiences = [
       img: "https://media.licdn.com/dms/image/C4D0BAQFOqOH6xI8E4g/company-logo_100_100/0/1656050069211/einix_infotech_private_limited_logo?e=1713398400&v=beta&t=JidStb6JBlkonQLaSiV7qRHfi9fbXSuYnZD5XiBLsZg",
       role: "Full Stack Developer",
       company: "EINIX INFOTECH PRIVATE LIMITED",
-      date: "Feb 2023 - May 2023",
-      desc: "Contributing to different open-source projects and learn from industry experts. and working on different new technology integrations",
+      date: "March 2023 - May 2023",
+      desc: "Contributing to different open-source projects and learn from team experts. and working on different new technology integrations",
       skills: [
         "Laravel",
         "Html",
@@ -183,7 +183,8 @@ export const experiences = [
       role: "Front End developer Intern",
       company: "Lets Grow more",
       date: "Sep 2022 - Oct 2022",
-      desc: "As a Laravel developer at the Lets Grow More(LGM)), I have had the opportunity to work on exciting projects of web Apps creation.",
+      desc: "Proficiently employed a versatile technology stack comprising HTML, CSS, Bootstrap, and JavaScript (JS), ReactJs to broaden my web development skill set, contributing to 70% of my overall proficiency.Successfully executed small‑scale projects employing HTML, CSS, Bootstrap,ReactJs reinforcing my practical knowledge in web dev",
+      
       skills: [
       "Web Application Development",
       "Html",
