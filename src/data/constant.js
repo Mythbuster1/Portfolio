@@ -10,9 +10,9 @@ export const Bio = {
     ],
     description:
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-    github: "https://github.com/Mythbuster1",
+    github: "https://github.com/TarunKsharma1",
     resume:
-      "https://www.google.com",
+      "https://drive.google.com/file/d/1_9Cvxq0EOIWc6aIFQWzzlGx8-PeyuAgL/view?usp=drive_link",
     linkedin: "https://www.linkedin.com/in/tarun-sharma-721952221/",
     twitter: "https://twitter.com/TarunKu61895842",
     insta: "https://www.instagram.com/tarun._.bhardwaj/",
@@ -232,7 +232,7 @@ export const projects = [
       title: "Responsive WebSite",
       date: "Oct 2021",
       description:
-        "This is a responsive web application designed to enhance frontend  productivity in the workplace. This comprosies of google maps and Sass preprocessor for compiling CSS",
+        "This is a responsive web application designed to enhance frontend  productivity in the workplace. This comprises of google maps and Sass preprocessor for compiling CSS",
       image:
         "https://i.ibb.co/mzDxzqM/Screenshot-2024-01-17-at-9-19-54-PM.png",
       tags: [
@@ -242,19 +242,45 @@ export const projects = [
         "SASS",
       ],
       category: "web app",
-      github: "https://github.com/Mythbuster1/LGMVIP-WebDev-Task-1",
+      github: "https://github.com/TarunKsharma1/LGMVIP-WebDev-Task-1",
       webapp: "https://mythbuster1.github.io/LGMVIP-WebDev-Task-1/",
       member: [
         {
           name: "Tarun Kumar Sharma",
           img: "https://i.ibb.co/s96vZrd/IMG-1058.jpg",
           linkedin: "https://www.linkedin.com/in/tarun-sharma-721952221/",
-          github: "https://github.com/Mythbuster1",
+          github: "https://github.com/TarunKsharma1",
         },
       ],
     },
     {
         id: 1,
+        title: "React Api Fetch",
+        date: "Dec 2021",
+        description:
+          "This is a social clone web app using html/css/Javascript and its fully responsive This comprises of scss library and theme togglers",
+        image:
+          "https://i.ibb.co/GF3v12q/Screenshot-2024-01-27-at-2-04-58-AM.png",
+        tags: [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "Scss",
+        ],
+        category: "web app",
+        github: "https://github.com/TarunKsharma1/SocialMClone/",
+        webapp: "https://tarunksharma1.github.io/SocialMClone/",
+        member: [
+          {
+            name: "Tarun Kumar Sharma",
+            img: "https://i.ibb.co/s96vZrd/IMG-1058.jpg",
+            linkedin: "https://www.linkedin.com/in/tarun-sharma-721952221/",
+            github: "https://github.com/TarunKsharma1",
+          },
+        ],
+      },
+    {
+        id: 2,
         title: "React Api Fetch",
         date: "Oct 2021",
         description:
@@ -275,7 +301,7 @@ export const projects = [
             name: "Tarun Kumar Sharma",
             img: "https://i.ibb.co/s96vZrd/IMG-1058.jpg",
             linkedin: "https://www.linkedin.com/in/tarun-sharma-721952221/",
-            github: "https://github.com/Mythbuster1",
+            github: "https://github.com/TarunKsharma1",
           },
         ],
       },
