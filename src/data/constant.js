@@ -146,7 +146,7 @@ export const experiences = [
       img: "https://media.licdn.com/dms/image/C4D0BAQGoo0Uq0tl1Sg/company-logo_100_100/0/1631303606300?e=1713398400&v=beta&t=tuRKO0b5ya3CBCXqBrpa9PpOT2xnNx9EOLgTISu72Nc",
       role: "Laravel Developer",
       company: "Phoeniixx Designs",
-      date: "July 2023 - Present",
+      date: "July 2022 - Present",
       desc: "Currently engaged in the comprehensive development of a web application, applying my skills in Full Stack development. Proficiently utilizing Vue.js and React.js alongside Material UI for seamless and responsive user interfaces. Employing Laravel and various other backend technologies to ensure robust functionality and seamless integration. Additionally, actively involved in crafting APIs to enhance the application's connectivity and interoperability.",
       skills: [
       "ReactJS",
@@ -166,7 +166,7 @@ export const experiences = [
       img: "https://media.licdn.com/dms/image/C4D0BAQFOqOH6xI8E4g/company-logo_100_100/0/1656050069211/einix_infotech_private_limited_logo?e=1713398400&v=beta&t=JidStb6JBlkonQLaSiV7qRHfi9fbXSuYnZD5XiBLsZg",
       role: "Full Stack Developer",
       company: "EINIX INFOTECH PRIVATE LIMITED",
-      date: "March 2023 - May 2023",
+      date: "March 2022 - May 2022",
       desc: "Contributing to different open-source projects and learn from team experts. and working on different new technology integrations",
       skills: [
         "Laravel",
