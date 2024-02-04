@@ -254,8 +254,8 @@ export const projects = [
       ],
     },
     {
-        id: 1,
-        title: "React Api Fetch",
+        id:2,
+        title: "Html Css Javascript project",
         date: "Dec 2021",
         description:
           "This is a social clone web app using html/css/Javascript and its fully responsive This comprises of scss library and theme togglers",
@@ -280,7 +280,7 @@ export const projects = [
         ],
       },
     {
-        id: 2,
+        id: 3,
         title: "React Api Fetch",
         date: "Oct 2021",
         description:
